@@ -1,0 +1,25 @@
+{
+  "name": "svglogo_maker0823",
+  "version": "1.0.0",
+  "description": "Generate SVG logo",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ariesscode"
+  },
+  "author": "Abigail",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
