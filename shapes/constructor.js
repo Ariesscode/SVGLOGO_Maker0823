@@ -10,4 +10,9 @@ class Shape {
     setText(text) {
         this.text = text;
     }
+    setTextColor(textColor) {
+        this.textColor = textColor;
+    }
 }
+
+module.exports = Shape;
