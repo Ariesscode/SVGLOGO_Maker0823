@@ -1,9 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const circle = require('./shapes/circle');
-const triangle = require('./shapes/triangle');
-const square = require('./shapes/square');
-const constructor = require('./shapes/constructor');
 const Circle = require('./shapes/circle');
 const Triangle = require('./shapes/triangle');
 const Square = require('./shapes/square');
@@ -57,11 +53,8 @@ inquirer
             return true
         }
     }
-
-
-
 ]).then((data) => {
-        
+
 let shape;
 
 switch(data.shape.toLowerCase()) {
@@ -78,13 +71,13 @@ switch(data.shape.toLowerCase()) {
         console.log("Error: Invalid shape choice.");
         return;
 }
-    const newSVGLogo = shape.render();
+    const svgLogo = shape.render();
 
-    fs.writeFile(`${data.shape.toLowerCase()}.svg`, newSVGLogo, (err) => {
+    fs.writeFile(`${data.shape.toLowerCase()}.svg`, svgLogo, (err) => {
         if(err) {
             console.error(`Error: ${err}`);
         } else {
-         console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
+    console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
 }
 });
 });

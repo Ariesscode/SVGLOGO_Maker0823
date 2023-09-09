@@ -6,7 +6,7 @@ class Shape {
     
     }
     setText(text) {
-        this.text = text
+        this.text = text;
     }
     setColor(color) {
         this.color = color;
