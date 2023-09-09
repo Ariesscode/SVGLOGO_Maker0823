@@ -1,8 +1,6 @@
 
 const Shape = require('./constructor');
-const userText = 'TUB';
-const userTextColor = 'blue';
-const userShapeColor = 'black';
+
 
 class Square extends Shape {
     render() {
