@@ -1,4 +1,7 @@
 const Shape = require('./constructor');
+const userText = 'TUB';
+const userTextColor = 'blue';
+const userShapeColor = 'black';
 
 class Triangle extends Shape {
     render() {
