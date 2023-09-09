@@ -83,8 +83,9 @@ switch(data.shape.toLowerCase()) {
         console.log("Error: Invalid shape choice.");
         return;
 }
+    const newSVGLogo = shape.render();
 
-    fs.writeFile(`${data.shape.toLowerCase()}.svg`, shape.render(), (err) => {
+    fs.writeFile(`${data.shape.toLowerCase()}.svg`, newSVGLogo, (err) => {
         if(err) {
     console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
 }
