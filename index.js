@@ -59,13 +59,13 @@ let shape;
 
 switch(data.shape.toLowerCase()) {
     case 'circle':
-        shape = new Circle(data.text, data.color, data.textColor)
+        shape = new Circle(data.color, data.text, data.textColor)
         break;
     case 'triangle':
-        shape = new Triangle(data.text, data.color, data.textColor);
+        shape = new Triangle(data.color, data.text, data.textColor);
         break;
     case 'square':
-        shape = new Square(data.text, data.color, data.textColor);
+        shape = new Square(data.color, data.text, data.textColor);
         break;
     default:
         console.log("Error: Invalid shape choice.");
