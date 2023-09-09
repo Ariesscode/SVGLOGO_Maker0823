@@ -1,4 +1,5 @@
 const Shape = require('./constructor')
+
 class Triangle extends Shape {
 render() {
 return
