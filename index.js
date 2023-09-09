@@ -61,12 +61,7 @@ inquirer
 
 
 ]).then((data) => {
-        console.log("creating Logo....");
-     
-        writeToFile(data);
-    })
-    
-function writeToFile(data) {
+        
 let shape;
 
 switch(data.shape.toLowerCase()) {
@@ -87,10 +82,12 @@ switch(data.shape.toLowerCase()) {
 
     fs.writeFile(`${data.shape.toLowerCase()}.svg`, newSVGLogo, (err) => {
         if(err) {
-    console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
+            console.error(`Error: ${err}`);
+        } else {
+         console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
 }
 });
-}
+});
 
 
 
