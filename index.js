@@ -23,7 +23,7 @@ inquirer
 
     },
     {
-        type: 'choice',
+        type: 'list',
         name: 'shape',
         message: 'Choose a shape for the LOGO:',
         choices: ['Triangle', 'Circle', 'Square'],
@@ -62,23 +62,35 @@ inquirer
 
 ]).then((data) => {
         console.log("creating Logo....");
-        writeToFile();
+     
+        writeToFile(data);
     })
     
 function writeToFile(data) {
-    const userShape = data.shape;
-    
+let shape;
 
-    if(userShape === circle) {
-        fs.writeFile(`${userShape}.svg`, Circle);
-    } else if (userShape === triangle) {
-        fs.writeFile(`${userShape}.svg`, Triangle);
-    } else if(userShape === square) {
-        fs.writeFile(`${userShape}.svg`, Square);
-    } else {
-        console.log("Error found. Make sure all questions are answered correctly.");
-    }
+switch(data.shape.toLowerCase()) {
+    case 'circle':
+        shape = new Circle(data.text, data.color, data.textColor)
+        break;
+    case 'triangle':
+        shape = new Triangle(data.text, data.color, data.textColor);
+        break;
+    case 'square':
+        shape = new Square(data.text, data.color, data.textColor);
+        break;
+    default:
+        console.log("Error: Invalid shape choice.");
+        return;
 }
+
+    fs.writeFile(`${data.shape.toLowerCase()}.svg`, shape.render(), (err) => {
+        if(err) {
+    console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
+}
+});
+}
+
 
 
 
