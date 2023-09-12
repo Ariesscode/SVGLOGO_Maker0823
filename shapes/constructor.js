@@ -1,8 +1,9 @@
 class Shape {
-    constructor(color, text, textColor) {
+    constructor(color, text, textColor, fontSize) {
         this.color = color;
         this.text = text;
         this.textColor = textColor;
+        this.fontSize = fontSize;
     
     }
     setText(text) {
@@ -13,6 +14,9 @@ class Shape {
     }
     setTextColor(textColor) {
         this.textColor = textColor;
+    }
+    setFontSize(fontSize) {
+        this.fontSize = fontSize;
     }
 }
 

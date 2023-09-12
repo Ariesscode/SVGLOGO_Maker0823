@@ -52,6 +52,12 @@ inquirer
             }
             return true
         }
+    },
+    {
+        type: 'input',
+        name: 'fontSize',
+        message: 'Enter a font size. If no font size entered, a default font size of 60 will be set.',
+        default: '60'
     }
 ]).then((data) => {
 
