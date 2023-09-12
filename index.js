@@ -57,15 +57,16 @@ inquirer
             type: 'input',
             name: 'fontSize',
             message: 'Enter a font size. If no font size entered, a default font size of 60 will be set.',
-            initial: '60'
+            default: '60'
         }
     ]).then((data) => {
-        const fontSize = data.fontSize || 60;
-        console.log(`Shape: ${data.shape}`)
+        const fontSize = data.fontSize !== undefined && data.fontSize !== '' ? data.fontSize : '60';
+
+        console.log(`Shape: ${data.shape}`);
         console.log(`Color: ${data.color}`);
         console.log(`Text: ${data.text}`);
-        console.log(`Text Color: ${data.textColor}`)
-        console.log(`Selected font size: ${fontSize}`);
+        console.log(`Text Color: ${data.textColor}`);
+        console.log(`Selected font size: ${data.fontSize}`);
         console.log(`CREATING LOGO....`);
 
 
@@ -100,7 +101,7 @@ inquirer
 
             });
 
-        }, "5000");
+        }, 5000);
 
     });
 
