@@ -57,21 +57,23 @@ inquirer
         type: 'input',
         name: 'fontSize',
         message: 'Enter a font size. If no font size entered, a default font size of 60 will be set.',
-        default: '60'
+        initial: '60'
     }
 ]).then((data) => {
+    const fontSize = data.fontSize || 60;
+    console.log(`Selected font size: ${fontSize}`);
 
 let shape;
 
 switch(data.shape.toLowerCase()) {
     case 'circle':
-        shape = new Circle(data.color, data.text, data.textColor)
+        shape = new Circle(data.color, data.text, data.textColor, data.fontSize)
         break;
     case 'triangle':
-        shape = new Triangle(data.color, data.text, data.textColor);
+        shape = new Triangle(data.color, data.text, data.textColor, data.fontSize);
         break;
     case 'square':
-        shape = new Square(data.color, data.text, data.textColor);
+        shape = new Square(data.color, data.text, data.textColor, data.fontSize);
         break;
     default:
         console.log("Error: Invalid shape choice.");
