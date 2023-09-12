@@ -61,7 +61,13 @@ inquirer
     }
 ]).then((data) => {
     const fontSize = data.fontSize || 60;
+    console.log(`Shape: ${data.shape}`)
+    console.log(`Color: ${data.color}`);
+    console.log(`Text: ${data.text}`);
+    console.log(`Text Color: ${data.textColor}`)
     console.log(`Selected font size: ${fontSize}`);
+    console.log(`CREATING LOGO....`);
+
 
 let shape;
 
@@ -80,15 +86,20 @@ switch(data.shape.toLowerCase()) {
         return;
 }
     const svgLogo = shape.render();
-
+    setTimeout(() => {
     fs.writeFile(`${data.shape.toLowerCase()}.svg`, svgLogo, (err) => {
         if(err) {
             console.error(`Error: ${err}`);
         } else {
     console.log(`File ${data.shape.toLowerCase()}.svg has been created with the logo.`)
-}
+    };
+
+    });
+
+    }, "5000");
 });
-});
+
+
 
 
 
