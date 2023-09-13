@@ -1,4 +1,3 @@
-
 const Shape = require('./constructor');
 
 
@@ -9,7 +8,7 @@ class Square extends Shape {
     <rect x="90" y="40" width="120" height="120" fill="${this.color}" />
     <text x="150" y="125" font-size="${this.fontSize}" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
     </svg>
- `;
+    `;
     };
 };
 

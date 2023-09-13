@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Circle = require('./shapes/Circle');
-const Triangle = require('./shapes/Triangle');
-const Square = require('./shapes/Square');
+const Circle = require('./shapes/circle');
+const Triangle = require('./shapes/triangle');
+const Square = require('./shapes/square');
 
 inquirer
     .prompt([
@@ -11,7 +11,7 @@ inquirer
             name: 'text',
             message: 'Enter up to three characters.',
             validate: (text) => {
-                if (text === "") {
+                if (text === "" || text > 3) {
                     return 'Please enter a valid number of characters to create LOGO.'
                 }
                 return true
