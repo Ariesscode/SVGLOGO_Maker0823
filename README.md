@@ -7,10 +7,14 @@ I have created a application for users to easily create a logo within seconds. T
 ## Walk-through Video: 
 https://drive.google.com/file/d/1hdWf_A9rBNa8IFgxaRx7odIf_4Fj6K6Z/view
 
+## Github REPO:
+https://github.com/Ariesscode/SVGLOGO_Maker0823
+
 
 ## Table of contents:
 - [Task](#Task)
 - [Walk-through Video](#walk-through-video)
+- [Github REPO](#github-repo)
 - [Created Examples](#logo-examples)
 - [User Story](#User-Story)
 - [Mockup](#Mock-up)
