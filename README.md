@@ -7,6 +7,7 @@ I have created a application for users to easily create a logo within seconds. T
 ## Walk-through Video: 
 https://drive.google.com/file/d/1hdWf_A9rBNa8IFgxaRx7odIf_4Fj6K6Z/view
 
+
 ## Table of contents:
 - [Task](#Task)
 - [Walk-through Video](#walk-through-video)
@@ -44,6 +45,8 @@ This applicatiion uses [Jest](https://www.npmjs.com/package/jest) for running th
 
 ## Start the Application:
 Type this into your command line:
+
+**Note: npm i or npm install required!
 
 node index.js
 
