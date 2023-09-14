@@ -9,7 +9,7 @@ https://drive.google.com/file/d/1hdWf_A9rBNa8IFgxaRx7odIf_4Fj6K6Z/view
 
 ## Table of contents:
 - [Task](#Task)
-- [Walk-through Video](#)
+- [Walk-through Video](#walk-through-video)
 - [Created Examples](#logo-examples)
 - [User Story](#User-Story)
 - [Mockup](#Mock-up)
