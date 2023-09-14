@@ -6,21 +6,23 @@ I have created a application for users to easily create a logo within seconds. T
 
 ## Table of contents:
 - [Task](#Task)
-- [CreatedExamples](#CreatedLogoExamples)
-- [UserStory](#UserStory)
+- [Created Examples](#logo-examples)
+- [User Story](#User-Story)
 - [Mockup](#Mock-up)
 - [Dependencies](#Dependencies)
+- [Start Program](#start-the-application)
 - [Tests](#Tests)
+- [Resources](#helpful-svg-resources)
 - [Contact](#Contact)
 
 
-## Created Logo Examples:
+## Logo Examples:
 ![Alt text](<CreatedLogoExamples/Circle Logo Example.png>)  
 ![Alt text](CreatedLogoExamples/SquareLogoExample.png)      
 ![Alt text](CreatedLogoExamples/TriangleLogoExample.png)    
 
  
-### User Story
+### User-Story
 
 ```md
 AS a freelance web developer
